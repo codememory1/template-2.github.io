@@ -34,6 +34,24 @@ h1,h2,h3,h4,h5,h6,ul,li {
 	display: flex;
 }
 
+input,button {
+	outline: none;
+	border: none;
+}
+
+input[type="text"],input[type="password"],input[type="email"] {
+	background: #FFFFFF;
+	border: 1px solid #DDDAE7;
+	box-sizing: border-box;
+	border-radius: 4px;
+	color: #918D9A;
+	padding: 15px;
+}
+
+input::placeholder {
+	color: #918D9A;
+}
+
 a {
 	text-decoration: none;
 
@@ -51,6 +69,7 @@ a {
 	line-height: 18px;
 	color: #fff;
 	background-color: $accent;
+	cursor: pointer;
 
 	&:hover {
 		color: #fff;
@@ -202,6 +221,78 @@ a {
 
 	.btn {
 		position: relative;
+	}
+}
+
+.modal {
+	background-color: rgba(28, 24, 47, 0.3);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	backface-visibility: hidden;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.3s, opacity 0.5s;
+
+	&.active {
+		backface-visibility: visible;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	&__wraper {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&__content {
+		background-color: #fff;
+		padding: 55px;
+		border-radius: 6px;
+		width: 490px;
+		position: relative;
+
+		.modal__close {
+			position: absolute;
+			font-size: 42px;
+			width: 42px;
+			height: 42px;
+			right: 10px;
+			top: 10px;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			color: #918D9A;
+			cursor: pointer;
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 52px;
+		text-align: center;
+		padding-bottom: 50px;
+	}
+
+	.wrap__input {
+		flex-flow: column;
+
+		label {
+			font-size: 18px;
+			line-height: 24px;
+			color: #474351;
+			margin-bottom: 15px;
+		}
+
+		input {
+			margin-bottom: 35px;
+		}
+	}
+	.btn {
+		width: 100%;
 	}
 }
 

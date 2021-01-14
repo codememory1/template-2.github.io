@@ -13,12 +13,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="Description">
 	<link rel="stylesheet" href="app/css/main.min.css">
-	<link rel="preload" href="app/fonts/RobotoBold/RobotoBold.woff">
-	<link rel="preload" href="app/fonts/WhitneyLight/Whitney-Light.woff">
+	<link rel="preload" href="app/fonts/RobotoBold/RobotoBold.woff" as="font" crossorigin>
+	<link rel="preload" href="app/fonts/WhitneyLight/Whitney-Light.woff" as="font" crossorigin>
 
 </head>
 
 <body>
+
+	<div class="modal">
+		<div class="modal__wraper">
+			<div class="modal__content">
+				<div class="modal__close">&times;</div>
+				<h2 class="modal__title">Авторизация</h2>
+				<form action="/" method="POST">
+					<div class="wrap__input flex">
+						<label for="email">E-mail</label>
+						<input type="email" name="email" id="email" placeholder="Введите e-mail">
+					</div>
+					<div class="wrap__input flex">
+						<label for="password">Пароль</label>
+						<input type="password" name="password" id="password" placeholder="Введите пароль">
+					</div>
+					<button class="btn">Войти</button>
+				</form>
+			</div>
+		</div>
+	</div>
 
 	<header class="header">
 		<div class="container">
@@ -128,7 +148,7 @@
 		</div>
 	</div>
 
-	<script src="js/scripts.min.js"></script>
+	<script src="app/js/scripts.min.js"></script>
 
 </body>
 </html>
