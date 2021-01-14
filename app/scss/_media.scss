@@ -52,6 +52,19 @@
     .navigation__item {
         padding-right: 30px!important;
     }
+
+    .modal__wraper {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translate(0);
+    }
+
+    .modal__content {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -96,19 +109,6 @@
     .content__items img{
         width: 330px;
         height: 211px;
-    }
-
-    .modal__wraper {
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transform: translate(0);
-    }
-
-    .modal__content {
-        width: 100%;
-        height: 100%;
     }
 }
 
