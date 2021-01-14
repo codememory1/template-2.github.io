@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("whitney", "../fonts/WhitneyLight/Whitney-Light", 350);
+@include font-face("whitney", "../fonts/WhineyBold/Whitney-Bold", 600);
