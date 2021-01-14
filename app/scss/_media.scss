@@ -46,7 +46,15 @@
 // ≥576px
 @include media-breakpoint-down(xs) {
     .content__items-title {
-        font-size: 40px!important;
+        font-size: 25px!important;
+        text-align: center;
+        padding-top: 30px!important;
+        padding-bottom: 30px!important;
+    }
+
+    .content__items-text{
+        font-size: 17px!important;
+        line-height: 25px!important;
     }
 
     .navigation__item {
